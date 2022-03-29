@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Fastenkurse</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/Fastenkurse.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Veronika Maier</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html#intro">Home</a></li>
+						<li><a href="index.html#work">Meine Angebote Für Dich</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2 style="font-size: 40px; color: blanchedalmond;">
+							„Fasten ist die Nahrung der Seele“ 							
+							
+						</h2>
+					</header>
+					<p style="color: blanchedalmond;"><b>~ J. Chrysostomus </b> <br><br><br>
+						Vielleicht lassen Sie sich auf das Abenteuer „Fasten“ ein,
+						eine überaus lohnenswerte Erfahrung für jede und jeden, 
+						der mehr aus seinem Leben machen möchte.</p>
+					<footer>
+						<a href="#two" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+
+		
+
+		<!-- Two -->
+			<section id="two" class="main style3 primary">
+				<div class="content box style2">
+					<header>
+						<h2>Eine Fastenwoche für Gesunde</h2>
+					</header>
+					<p> Durch den bewussten Verzicht auf feste Nahrung und auf Genussmittel für begrenzte Zeit, 
+						erfolgt die Umschaltung des Stoffwechsels auf Ernährung von Innen. 
+						In diesem Kurs wird das Fasten nach Dr. med M. O. Bruker, bzw. nach Dr. Buchinger angeboten.
+						<br><br>
+						<b>Zum Ablauf:</b><br>
+						Sie werden am ersten Abend auf die Fastenwoche vorbereitet. 
+						Auf zwei Entlastungstagen folgen fünf Fastentage, 
+						dann zwei Aufbautage. Auf unserem gemeinsamen Weg durch diese Woche werden wir 
+						die kostbare Auszeit in der Gruppe zum Erfahrungsaustausch, 
+						für Entspannung, Bewegung u. v. a. nutzen.<br><br>
+
+						<b>So könnte es weitergehen:</b><br>
+						Fasten ist Neubeginn für Körper, Geist und Seele. 
+						Ihre Erfahrung könnte Sie motivieren, alte Gewohnheiten abzustellen und 
+						durch eine anschließende Nahrungsumstellung neue Wege zu gehen, 
+						die Wichtigkeit unserer Lebensmittel zu erkunden und so den Krankheiten vorzubeugen, 
+						um eine dauerhaft gesündere Lebensweise zu erzielen und der Entstehung 
+						von Zivilisationskrankheiten vorzubeugen.
+						Als Einstig erhalten Sie am 2. Aufbautag einne Einführung in die 
+						vitalstoffreiche Vollwertkost. (Zeitplan: 5 Treffen)
+						
+					</p>																						 
+				</div>
+				
+			</section>
+
+		
+			
+
+		
+		
+
+		
+		<!-- Footer -->
+			<footer id="footer">
+
+				
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy;Veronika Maier</li></a></li>
+						<a href="impressum.html">Impressum &amp; Datenschutz</a>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>popup = {
+				init: function(){
+				  $('figure').click(function(){
+					popup.open($(this));
+				  });
+				  
+				  $(document).on('click', '.popup img', function(){
+					return false;
+				  }).on('click', '.popup', function(){
+					popup.close();
+				  })
+				},
+				open: function($figure) {
+				  $('.gallery').addClass('pop');
+				  $popup = $('<div class="popup" />').appendTo($('body'));
+				  $fig = $figure.clone().appendTo($('.popup'));
+				  $bg = $('<div class="bg" />').appendTo($('.popup'));
+				  $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+				  $shadow = $('<div class="shadow" />').appendTo($fig);
+				  src = $('img', $fig).attr('src');
+				  $shadow.css({backgroundImage: 'url(' + src + ')'});
+				  $bg.css({backgroundImage: 'url(' + src + ')'});
+				  setTimeout(function(){
+					$('.popup').addClass('pop');
+				  }, 10);
+				},
+				close: function(){
+				  $('.gallery, .popup').removeClass('pop');
+				  setTimeout(function(){
+					$('.popup').remove()
+				  }, 100);
+				}
+			  }
+			  
+			  popup.init()
+			  </script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gesundheitsberatung</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/Gesundheitsberatung.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Veronika Maier</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html#intro">Home</a></li>
+						<li><a href="index.html#work">Meine Angebote Für Dich</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		
+
+		
+
+		<!-- Two -->
+			<section id="two" class="main style3 primary">
+				<div class="content box style2">
+					<header>
+						<h2>Gesundheitsberatung</h2>
+					</header>
+					<p> Gerne berate ich Dich zu deinen ganz 
+						individuellen Fragen und Anliegen und unterstütze Dich auf 
+						Wunsch bei deiner Neuorientierung in der „Vollwertwelt“.<br><br>
+						Melde Dich hierfür einfach per Mail bei mir!
+					</p>																						 
+				</div>
+				
+			</section>
+
+		
+				
+		
+
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy;Veronika Maier</li></a></li>
+						<a href="impressum.html">Impressum &amp; Datenschutz</a>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>popup = {
+				init: function(){
+				  $('figure').click(function(){
+					popup.open($(this));
+				  });
+				  
+				  $(document).on('click', '.popup img', function(){
+					return false;
+				  }).on('click', '.popup', function(){
+					popup.close();
+				  })
+				},
+				open: function($figure) {
+				  $('.gallery').addClass('pop');
+				  $popup = $('<div class="popup" />').appendTo($('body'));
+				  $fig = $figure.clone().appendTo($('.popup'));
+				  $bg = $('<div class="bg" />').appendTo($('.popup'));
+				  $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+				  $shadow = $('<div class="shadow" />').appendTo($fig);
+				  src = $('img', $fig).attr('src');
+				  $shadow.css({backgroundImage: 'url(' + src + ')'});
+				  $bg.css({backgroundImage: 'url(' + src + ')'});
+				  setTimeout(function(){
+					$('.popup').addClass('pop');
+				  }, 10);
+				},
+				close: function(){
+				  $('.gallery, .popup').removeClass('pop');
+				  setTimeout(function(){
+					$('.popup').remove()
+				  }, 100);
+				}
+			  }
+			  
+			  popup.init()
+			  </script>
+	</body>
+</html>
